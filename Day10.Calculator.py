@@ -59,7 +59,7 @@ else:
         while again == 'yes' or again == 'ok':
             output = user_input()
             output = list(output)
-            final = calculator(output)
+            final = round(calculator(output), 2)
 
             print(f"Your operation:\n {output[0]} {output[2]} {output[1]} = {final}\n")
 
